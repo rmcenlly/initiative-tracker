@@ -4,6 +4,10 @@ html {
   min-height:100%;
 }
 
+input.right {
+  float: right;
+}
+
 @layer base {
   h1 {
     @apply text-4xl;
