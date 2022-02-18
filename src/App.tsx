@@ -125,7 +125,7 @@ function App() {
                 </tr>
               );
             })}
-            <tr>
+            <tr className="bg-slate-900 bg-opacity-50 border border-grey-500 md:border-none block md:table-row">
               <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
                 <input
                   className="text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-min h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow"
