@@ -77,8 +77,11 @@ function App() {
                     {character.characterName}
                   </td>
                   <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
-                    {character.HP}
-                  <input
+                    <div className="block inline-flex">
+                      {character.HP}
+                      <img className="ml-2 h-min self-center" src="https://img.icons8.com/fluency-systems-filled/25/fa314a/pixel-heart.png" />
+                    </div>
+                    <input
                       className="right text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-1/2 h-10 items-center pl-3 text-sm border-gray-300 rounded border shadow"
                       type="text"
                       placeholder="Damage"
@@ -88,8 +91,10 @@ function App() {
                     />
                   </td>
                   <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
-                    {character.AC}
-
+                    <div className="block inline-flex">
+                      {character.AC}
+                      <img className="ml-2 h-min self-center" src="https://img.icons8.com/color/25/000000/knight-shield.png" />
+                    </div>
                     <input
                       className="right text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-1/2 h-10 items-center pl-3 text-sm border-gray-300 rounded border shadow"
                       type="text"
