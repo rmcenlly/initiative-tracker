@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/initiative-tracker/static/css/main.9eba5112.css",
+    "main.js": "/initiative-tracker/static/js/main.fbac71ed.js",
+    "static/js/787.f3823f6a.chunk.js": "/initiative-tracker/static/js/787.f3823f6a.chunk.js",
+    "static/media/deadVillage.jpeg": "/initiative-tracker/static/media/deadVillage.d856abb1ee013bed82d8.jpeg",
+    "index.html": "/initiative-tracker/index.html",
+    "main.9eba5112.css.map": "/initiative-tracker/static/css/main.9eba5112.css.map",
+    "main.fbac71ed.js.map": "/initiative-tracker/static/js/main.fbac71ed.js.map",
+    "787.f3823f6a.chunk.js.map": "/initiative-tracker/static/js/787.f3823f6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9eba5112.css",
+    "static/js/main.fbac71ed.js"
+  ]
+}
