@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-const defaultPlayers = ["Josh", "Tom", "Jackson", "Charli"];
 const defaultCharacters = [
   {
     characterName: "Elia",
@@ -11,20 +10,23 @@ const defaultCharacters = [
     AC: 15,
   },
   {
-    characterName: "Axalotl",
+    characterName: "Axel",
     HP: 44,
     AC: 14,
   },
   {
-    characterName: "Smthn",
+    characterName: "The Wanderer",
     HP: 43,
     AC: 13,
+  },
+  {
+    characterName: "Jesus Joseph  ",
+    HP: 38,
+    AC: 16,
   },
 ];
 
 function App() {
-  const [players, setPlayers] = useState(defaultPlayers);
-  const [newPlayerName, setNewPlayerName] = useState("Monster");
 
   const [characters, setCharacters] = useState(defaultCharacters);
   const [newCHP, setNewCHP] = useState("0");
@@ -82,7 +84,7 @@ function App() {
                       <img className="ml-2 h-min self-center" src="https://img.icons8.com/fluency-systems-filled/25/fa314a/pixel-heart.png" />
                     </div>
                     <input
-                      className="right text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-1/2 h-10 items-center pl-3 text-sm border-gray-300 rounded border shadow"
+                      className="right text-gray-600 text-gray-400 focus:outline-none focus:ring-offset-2 border-gray-700 bg-gray-800 font-normal w-1/2 h-10 items-center pl-3 text-sm  rounded border shadow"
                       type="text"
                       placeholder="Damage"
                       onChange={(e) => {
@@ -96,7 +98,7 @@ function App() {
                       <img className="ml-2 h-min self-center" src="https://img.icons8.com/color/25/000000/knight-shield.png" />
                     </div>
                     <input
-                      className="right text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-1/2 h-10 items-center pl-3 text-sm border-gray-300 rounded border shadow"
+                      className="right text-gray-600 text-gray-400 focus:outline-none focus:ring-offset-2 border-gray-700 bg-gray-800 font-normal w-1/2 h-10 items-center pl-3 text-sm  rounded border shadow"
                       type="text"
                       placeholder="0"
                       onChange={(e) => {
@@ -133,7 +135,7 @@ function App() {
             <tr className="bg-slate-900 bg-opacity-50 border border-grey-500 md:border-none block md:table-row">
               <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
                 <input
-                  className="text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-min h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow"
+                  className="text-gray-600 text-gray-400 focus:outline-none focus:ring-offset-2 border-gray-700 bg-gray-800 font-normal w-min h-10 flex items-center pl-3 text-sm  rounded border shadow"
                   type="text"
                   value={newCharacterName}
                   onChange={(e) => {
@@ -143,7 +145,7 @@ function App() {
               </td>
               <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
                 <input
-                  className="text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow"
+                  className="text-gray-600 text-gray-400 focus:outline-none focus:ring-offset-2 border-gray-700 bg-gray-800 font-normal w-full h-10 flex items-center pl-3 text-sm  rounded border shadow"
                   type="text"
                   value={newHP}
                   onChange={(e) => {
@@ -153,7 +155,7 @@ function App() {
               </td>
               <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
                 <input
-                  className="middle text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow"
+                  className="middle text-gray-600 text-gray-400 focus:outline-none focus:ring-offset-2 border-gray-700 bg-gray-800 font-normal w-full h-10 flex items-center pl-3 text-sm  rounded border shadow"
                   type="text"
                   value={newAC}
                   onChange={(e) => {
@@ -205,68 +207,6 @@ function App() {
           Reset
         </button>
       </div>
-
-      {/* <div className="mx-auto px-4 py-4 max-w-xl my-auto">
-          <ul className=" list-reset flex flex-col">
-            {players.map((player, index) => (
-              <li className="relative -mb-px block border p-4 border-grey">
-                {player}
-                <button
-                  className="flex justify-end mx-2 my-2 bg-zinc-900 transition duration-150 ease-in-out hover:bg-gray-400 rounded text-rose-800 px-6 py-2 text-xs font-bold focus:outline-none focus:ring-offset-2  focus:ring-rose-800"
-                  onClick={() => {
-                    const newPlayers = [...players];
-                    newPlayers.splice(index, 1);
-                    setPlayers(newPlayers);
-                  }}
-                >
-                  Delete
-                </button>
-              </li>
-            ))}
-            <li className="relative -mb-px block border p-4 border-grey">
-              <input
-                className="text-gray-600 dark:text-gray-400 focus:outline-none focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow"
-                type="text"
-                placeholder="new player name"
-                value={newPlayerName}
-                onChange={(e) => {
-                  setNewPlayerName(e.target.value);
-                }}
-              />
-              <button
-                className="mx-2 my-2 bg-zinc-900 transition duration-150 ease-in-out hover:bg-gray-400 rounded text-green-700 px-6 py-2 text-xs focus:outline-none focus:ring-offset-2  focus:ring-green-700 font-bold"
-                onClick={() => {
-                  const newPlayers = [...players];
-                  newPlayers.push(newPlayerName);
-                  setPlayers(newPlayers);
-                }}
-              >
-                Add
-              </button>
-            </li>
-          </ul>
-          <br />
-          <button
-            className="mx-2 my-2 bg-zinc-900 transition duration-150 ease-in-out hover:bg-gray-400 rounded text-violet-800 px-6 py-2 text-xs focus:outline-none focus:ring-offset-2  focus:ring-violet-800 font-bold"
-            onClick={() => {
-              const newPlayers = [...players];
-              newPlayers.sort(function (a, b) {
-                return 0.5 - Math.random();
-              });
-              setPlayers(newPlayers);
-            }}
-          >
-            Randomize
-          </button>
-          <button
-            className="mx-2 my-2 bg-zinc-900 transition duration-150 ease-in-out hover:bg-gray-400 rounded text-amber-600 px-6 py-2 text-xs focus:outline-none focus:ring-offset-2  focus:ring-amber-600 font-bold"
-            onClick={() => {
-              setPlayers(defaultPlayers);
-            }}
-          >
-            Reset
-          </button>
-        </div> */}
     </div>
   );
 }
