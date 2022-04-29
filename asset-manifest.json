@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/initiative-tracker/static/css/main.20344745.css",
-    "main.js": "/initiative-tracker/static/js/main.c3ea92a5.js",
+    "main.css": "/initiative-tracker/static/css/main.953ed938.css",
+    "main.js": "/initiative-tracker/static/js/main.aa6b01f0.js",
     "static/js/787.f3823f6a.chunk.js": "/initiative-tracker/static/js/787.f3823f6a.chunk.js",
     "static/media/deadVillage.jpeg": "/initiative-tracker/static/media/deadVillage.d856abb1ee013bed82d8.jpeg",
     "index.html": "/initiative-tracker/index.html",
-    "main.20344745.css.map": "/initiative-tracker/static/css/main.20344745.css.map",
-    "main.c3ea92a5.js.map": "/initiative-tracker/static/js/main.c3ea92a5.js.map",
+    "main.953ed938.css.map": "/initiative-tracker/static/css/main.953ed938.css.map",
+    "main.aa6b01f0.js.map": "/initiative-tracker/static/js/main.aa6b01f0.js.map",
     "787.f3823f6a.chunk.js.map": "/initiative-tracker/static/js/787.f3823f6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20344745.css",
-    "static/js/main.c3ea92a5.js"
+    "static/css/main.953ed938.css",
+    "static/js/main.aa6b01f0.js"
   ]
 }
