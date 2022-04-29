@@ -19,9 +19,9 @@ const defaultCharacters = [
     AC: 13,
   },
   {
-    characterName: "Jesus Joseph",
+    characterName: "Jesus Dundy",
     HP: 38,
-    AC: 16,
+    AC: 17,
   },
 ];
 
@@ -72,7 +72,7 @@ function App() {
               return (
                 <tr
                   key={index}
-                  className="bg-slate-900 bg-opacity-50 border border-grey-500 md:border-none block md:table-row"
+                  className={character.HP <= 0 ? "bg-red-900 bg-opacity-50 border border-grey-500 md:border-none block md:table-row" : "bg-slate-900 bg-opacity-50 border border-grey-500 md:border-none block md:table-row"}
                 >
                   <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
                     {character.characterName}
@@ -89,6 +89,7 @@ function App() {
                       type="text"
                       placeholder="Damage"
                       onChange={(e) => {
+                        if ((e.target.value))
                         setNewCHP(e.target.value);
                       }}
                     />
@@ -121,8 +122,8 @@ function App() {
                         className="w-28 border-double border-4 border-sky-500 mx-1 my-2 bg-zinc-900 transition duration-150 ease-in-out hover:bg-gray-400 rounded text-sky-500 px-0 py-2 text-xs font-bold focus:outline-none focus:ring-offset-2  focus:ring-sky-500"
                         onClick={() => {
                           const newCharacters = [...characters];
-                          newCharacters[index].HP -= parseInt(newCHP, 10)
-                          newCharacters[index].AC += parseInt(newCAC, 10);
+                          newCharacters[index].HP -= parseInt(newCHP, 10) || 0;
+                          newCharacters[index].AC += parseInt(newCAC, 10) || 0;
                           setCharacters(newCharacters);
                         }}
                       >
@@ -182,8 +183,8 @@ function App() {
                       const newCharacters = [...characters];
                       newCharacters.push({
                         characterName: newCharacterName,
-                        HP: parseInt(newHP, 10),
-                        AC: parseInt(newAC, 10),
+                        HP: parseInt(newHP, 10) || 0,
+                        AC: parseInt(newAC, 10) || 0,
                       });
                       setCharacters(newCharacters);
                     }}
