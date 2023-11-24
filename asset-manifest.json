@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/initiative-tracker/static/css/main.b25eb537.css",
+    "main.css": "/initiative-tracker/static/css/main.96e37cc2.css",
     "main.js": "/initiative-tracker/static/js/main.7a5f5779.js",
     "static/js/787.f3823f6a.chunk.js": "/initiative-tracker/static/js/787.f3823f6a.chunk.js",
     "static/media/DMA-dark.png": "/initiative-tracker/static/media/DMA-dark.a97ded63f8627be68ecf.png",
     "index.html": "/initiative-tracker/index.html",
-    "main.b25eb537.css.map": "/initiative-tracker/static/css/main.b25eb537.css.map",
+    "main.96e37cc2.css.map": "/initiative-tracker/static/css/main.96e37cc2.css.map",
     "main.7a5f5779.js.map": "/initiative-tracker/static/js/main.7a5f5779.js.map",
     "787.f3823f6a.chunk.js.map": "/initiative-tracker/static/js/787.f3823f6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b25eb537.css",
+    "static/css/main.96e37cc2.css",
     "static/js/main.7a5f5779.js"
   ]
 }
