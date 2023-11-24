@@ -23,11 +23,95 @@ input.right {
   a {
     @apply text-blue-600 underline;
   }
+  .logolink {
+    @apply px-3 float-left
+  }
+  header {
+    @apply bg-rose-900 min-h-max;
+  }
+  .logo {
+    @apply max-h-12 inline-flex;
+  }
+  .nav-link {
+    @apply text-neutral-300 text-xl px-5 py-2 rounded;
+  }
+  .nav-link:hover {
+    @apply text-white
+  }
+  .current {
+    @apply text-white bg-white/20 font-bold;
+  }
   body {
-    background-image: url(./img/deadVillage.jpeg);
-    @apply font-sans antialiased bg-cover bg-fixed bg-gray-50 bg-gray-900 text-white
+    /* background-image: url(./img/deadVillage.jpeg); */
+    @apply my-auto font-sans antialiased dark:bg-zinc-900 dark:text-white w-screen
+  }
+  .page * {
+    @apply my-2
+  }
+  table {
+    @apply min-w-full mt-0
+  }
+  /* border bg-slate-900 boder-gray-900 */
+  tbody tr:nth-child(odd) {
+    @apply bg-slate-50 dark:bg-slate-900
+  }
+  tbody tr:nth-child(even) {
+    @apply bg-slate-200 dark:bg-slate-800
+  }
+  thead tr {
+    @apply bg-rose-900
+  }
+  .toggler {
+    @apply bg-rose-900 min-w-full mb-0 py-3 text-xl font-bold text-white
+  }
+  select {
+    @apply bg-transparent text-neutral-300 text-xl px-5 py-2 rounded;
+  }
+  
+
+
+  .navLi {
+    @apply inline;
+  }
+
+  .navbar {
+    @apply overflow-hidden bg-rose-900 align-middle inline-block
+  }
+  
+  .navbar a:not(.logolink) {
+    @apply float-left text-white text-neutral-300 text-2xl px-5 py-2 rounded;
+  }
+  
+  .dropdown {
+    @apply float-left overflow-hidden
+  }
+  
+  .dropdown .dropbtn {
+    @apply text-2xl text-neutral-300 px-5 py-2 rounded underline;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    @apply text-white
+  }
+  
+  .dropdown-content {
+    @apply hidden absolute bg-rose-900 rounded w-60 border-white border;
+  }
+  
+  .dropdown-content a {
+    @apply float-none text-neutral-300 px-4 py-3 no-underline block text-xl;
+  }
+  
+  .dropdown-content a:hover {
+    @apply bg-white/20 min-w-full
+  }
+  
+  .dropdown:hover .dropdown-content {
+    @apply block
   }
 }
+
+
 
 @tailwind components;
 

@@ -1,0 +1,103 @@
+{
+  "campaigns": [
+    {
+      "id": 1,
+      "name": "The Night of the Abyss",
+      "characters": [
+        {
+          "characterName": "Elia",
+          "HP": 38,
+          "AC": 15
+        },
+        {
+          "characterName": "Axel",
+          "HP": 44,
+          "AC": 16
+        },
+        {
+          "characterName": "The Wanderer",
+          "HP": 43,
+          "AC": 13
+        },
+        {
+          "characterName": "Jesus Dundy",
+          "HP": 38,
+          "AC": 17
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Wildtide's Rising",
+      "characters": [
+        {
+          "characterName": "Cyrus Aspenwhite",
+          "HP": 31,
+          "AC": 14
+        },
+        {
+          "characterName": "Lucas Banewood",
+          "HP": 21,
+          "AC": 13
+        },
+        {
+          "characterName": "Retributor",
+          "HP": 28,
+          "AC": 13
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Halloweewee",
+      "characters": [
+        {
+          "characterName": "Grud Smith",
+          "HP": 21,
+          "AC": 11
+        },
+        {
+          "characterName": "Vera Opaque",
+          "HP": 20,
+          "AC": 15
+        },
+        {
+          "characterName": "Scrapper",
+          "HP": 24,
+          "AC": 17
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sylvans",
+      "characters": [
+        {
+          "characterName": "Ainellim Kunt",
+          "HP": 43,
+          "AC": 15
+        },
+        {
+          "characterName": "Better Sarada",
+          "HP": 38,
+          "AC": 18
+        },
+        {
+          "characterName": "Elica",
+          "HP": 27,
+          "AC": 12
+        },
+        {
+          "characterName": "Natiya",
+          "HP": 55,
+          "AC": 15
+        },
+        {
+          "characterName": "Rizzard",
+          "HP": 37,
+          "AC": 14
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navigation from "./pages/navigation"
+import Home from "./pages/home";
+import Monsters from "./pages/monsters"
+import Stuff from "./pages/stuff";
+import Tracker from "./pages/tracker";
+import Players from "./pages/players";
+import Encounters from "./pages/encounters";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/monsters" element={<Monsters />} />
+      <Route path="/stuff" element={<Stuff />} />
+      <Route path="/stuff/players" element={<Players />} />
+      <Route path="/stuff/encounters" element={<Encounters />} />
+      <Route path="/tracker" element={<Tracker />} />
+    </Routes>
+  </Router>,
   document.getElementById('root')
 );
 
